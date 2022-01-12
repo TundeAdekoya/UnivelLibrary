@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+/* NAVIGATION */
+h2{
+    color: rgb(0, 113, 219);
+}
+li, a  {
+     font-weight: 600;
+     font-size: 16px;
+     color: rgb(34, 34, 34);
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+
+.logo {
+    cursor: pointer;
+}
+
+.navlink {
+    list-style: none ;
+
+}
+
+.navlink li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlink li a {
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+}
+
+.navlink li a:hover{
+    color: rgb(0, 113, 219);
+}
+
+div.icon{
+    display: flex;
+    justify-content: space-between;
+
+}
+div.logo1 {
+    color: rgb(0, 113, 219);
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-size: 24px;
+    margin-right: 60%;
+} 
+
+div.logo1:hover {
+    color: rgb(34, 34, 34);
+}
+div.logo2 {
+    color: rgb(0, 113, 219);
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-size: 24px
+} 
+
+div.logo2:hover {
+    color: rgb(34, 34, 34);
+}
+
+/* LINE BREAK */
+.line{
+width: auto;
+height: 1px;
+border: none;
+margin: 0px auto;
+background-color: rgb(230, 230, 230);
+}
+
+/* SEARCH BAR */
+section.search{
+    border: 1px rgb(211, 211, 211) solid;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 30px;
+    height: 30px;
+    margin: 30px 10%;
+    color: rgb(121, 121, 121);
+
+}
+
+
+div li{
+    list-style-type: none;
+}
+
+section input  {
+    padding-left: 10px;
+    border: 0px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* SERVICE */
+div.service{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    padding: 10px 10% 10px 10%;
+}
+
+.serlink li{
+    display: inline-block;
+    padding: 0px 60px;
+}
+
+.serlink li a {
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+}
+
+.serlink li a:hover{
+    color: rgb(0, 113, 219);
+}
+
+/* BODY */
+
+div.hero{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 113, 219);
+    background-position: center;
+    position: relative;
+     overflow-x: hidden; 
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 48px;
+}
+
+div.pictures{
+    top: 0px;
+    height: 300px;
+    width: 100%;
+    background-image: url(./image/book.png);
+    background-size: contain;
+    position: absolute;
+    background-repeat: repeat-x;
+    animation: pics 5s linear infinite forwards;
+    display: block;
+}
+
+@keyframes pics{
+    100%{
+            /* transform: translateX(1000px); */
+            background-position: 100% 0;
+            animation: 1000s linear infinite;
+    }
+}
+
+p {
+    padding: 30px 0px 0px 0px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+}
